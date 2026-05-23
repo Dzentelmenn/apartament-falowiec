@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import WeatherCard from "@/components/WeatherCard";
-import PageTransition from "@/components/PageTransition";
+
 
 export default function HomePage() {
   return (
