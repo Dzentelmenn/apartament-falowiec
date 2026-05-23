@@ -3,7 +3,7 @@
 import NavbarEN from "@/components/NavbarEN";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import WeatherCard from "@/components/WeatherCardEN";
+import WeatherCardEN from "@/components/WeatherCardEN";
 
 export default function HomePageEN() {
   return (
@@ -39,7 +39,8 @@ export default function HomePageEN() {
 
       </div>
 
-      <WeatherCard />
+      {/* WEATHER */}
+      <WeatherCardEN />
 
       {/* FOOTER */}
       <Footer />
