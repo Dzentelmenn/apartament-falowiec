@@ -19,7 +19,7 @@ export default function PageHero({
 
       {/* BACKGROUND */}
       <img
-        src="https://images.pexels.com/photos/36635158/pexels-photo-36635158.jpeg"
+        src="/main.JPG"
         alt={title}
         className="h-full w-full object-cover"
       />
