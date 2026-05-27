@@ -9,9 +9,9 @@ export default function AttractionsPage() {
       <PageHero
         title="Attractions"
         subtitle="The most interesting places in Gdańsk, Sopot and nearby areas."
-      backText="← Back"
-  backHref="/en"
-/>
+        backText="← Back"
+        backHref="/en"
+      />
 
       {/* CONTENT */}
       <section className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-10">
@@ -22,7 +22,7 @@ export default function AttractionsPage() {
           <div className="overflow-hidden rounded-[32px] bg-white/10 backdrop-blur-xl">
 
             <img
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+              src="https://images.pexels.com/photos/11249081/pexels-photo-11249081.jpeg"
               alt="Beach"
               className="h-72 w-full object-cover transition duration-700 hover:scale-105"
             />
@@ -52,7 +52,7 @@ export default function AttractionsPage() {
           <div className="overflow-hidden rounded-[32px] bg-white/10 backdrop-blur-xl">
 
             <img
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+              src="https://images.pexels.com/photos/31032281/pexels-photo-31032281.jpeg"
               alt="Park"
               className="h-72 w-full object-cover transition duration-700 hover:scale-105"
             />
@@ -80,7 +80,7 @@ export default function AttractionsPage() {
           <div className="overflow-hidden rounded-[32px] bg-white/10 backdrop-blur-xl">
 
             <img
-              src="https://images.unsplash.com/photo-1494526585095-c41746248156"
+              src="https://images.pexels.com/photos/37492025/pexels-photo-37492025.jpeg"
               alt="Sopot"
               className="h-72 w-full object-cover transition duration-700 hover:scale-105"
             />
@@ -108,7 +108,7 @@ export default function AttractionsPage() {
           <div className="overflow-hidden rounded-[32px] bg-white/10 backdrop-blur-xl">
 
             <img
-              src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+              src="https://images.pexels.com/photos/14018882/pexels-photo-14018882.jpeg"
               alt="Gdańsk"
               className="h-72 w-full object-cover transition duration-700 hover:scale-105"
             />
@@ -131,6 +131,41 @@ export default function AttractionsPage() {
 
         </FadeInSection>
 
+        {/* GREEN MARKET */}
+        <FadeInSection>
+
+          <div className="overflow-hidden rounded-[32px] bg-white/10 backdrop-blur-xl">
+
+            <img
+              src="https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg"
+              alt="Green Market"
+              className="h-72 w-full object-cover transition duration-700 hover:scale-105"
+            />
+
+            <div className="p-8">
+
+              <h2 className="text-4xl font-black">
+                🥬 Green Market
+              </h2>
+
+              <p className="mt-5 text-lg leading-relaxed text-neutral-300">
+                A classic old-school local market in Przymorze,
+                where you can find fresh vegetables, fruits,
+                local products and the atmosphere
+                of old Gdańsk.
+              </p>
+
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">
+                The biggest activity starts on Saturdays
+                around 6:00 AM.
+              </p>
+
+            </div>
+
+          </div>
+
+        </FadeInSection>
+
         {/* RESTAURANTS */}
         <FadeInSection>
 
@@ -140,41 +175,198 @@ export default function AttractionsPage() {
               🍽️ Recommended Places
             </h2>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {/* LOCAL */}
+            <div className="mt-10">
 
-              <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+              <h3 className="text-3xl font-bold">
+                📍 Near the apartment
+              </h3>
 
-                <h3 className="text-2xl font-bold">
-                  Mielony
-                </h3>
+              <p className="mt-3 max-w-3xl text-neutral-300">
+                Recommended places located in Przymorze
+                and near the apartment. Perfect for lunch,
+                breakfast or an evening out.
+              </p>
 
-                <p className="mt-4 text-neutral-300">
-                  Traditional Polish cuisine and breakfasts.
-                </p>
+              <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+
+                <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+
+                  <h4 className="text-2xl font-bold">
+                    Pizzeria U Skrzypka BiS
+                  </h4>
+
+                  <p className="mt-4 text-neutral-300">
+                    A Przymorze classic. Not fancy,
+                    but a true local comfort food spot
+                    loved by residents for years.
+                  </p>
+
+                  <p className="mt-4 text-sm text-neutral-400">
+                    Przymorze
+                  </p>
+
+                </div>
+
+                <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+
+                  <h4 className="text-2xl font-bold">
+                    NOI Pizza i Wino
+                  </h4>
+
+                  <p className="mt-4 text-neutral-300">
+                    Modern Neapolitan pizza
+                    with a stylish atmosphere.
+                  </p>
+
+                  <p className="mt-4 text-sm text-neutral-400">
+                    Obrońców Wybrzeża
+                  </p>
+
+                </div>
+
+                <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+
+                  <h4 className="text-2xl font-bold">
+                    Restauracja A-DONG Przymorze
+                  </h4>
+
+                  <p className="mt-4 text-neutral-300">
+                    Great Asian comfort food near the apartment.
+                    Good pho, fried noodles
+                    and Asian cuisine.
+                  </p>
+
+                  <p className="mt-4 text-sm text-neutral-400">
+                    Przymorze
+                  </p>
+
+                </div>
+
+                <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+
+                  <h4 className="text-2xl font-bold">
+                    Asia Hoanmy
+                  </h4>
+
+                  <p className="mt-4 text-neutral-300">
+                    A Tricity classic. Huge portions,
+                    popular among students and locals,
+                    with excellent value-for-money.
+                  </p>
+
+                  <p className="mt-4 text-sm text-neutral-400">
+                    Przymorze
+                  </p>
+
+                </div>
+
+                <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+
+                  <h4 className="text-2xl font-bold">
+                    Whiskey On The Rocks
+                  </h4>
+
+                  <p className="mt-4 text-neutral-300">
+                    Burgers, steaks, whisky
+                    and an American-style atmosphere.
+                    Popular for evenings out.
+                  </p>
+
+                  <p className="mt-4 text-sm text-neutral-400">
+                    Przymorze
+                  </p>
+
+                </div>
+
+                <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+
+                  <h4 className="text-2xl font-bold">
+                    Bar Mleczny Jaros
+                  </h4>
+
+                  <p className="mt-4 text-neutral-300">
+                    The most classic cheap local lunch spot.
+                    Homemade food, large portions
+                    and old-school Przymorze atmosphere.
+                  </p>
+
+                  <p className="mt-4 text-sm text-neutral-400">
+                    Przymorze
+                  </p>
+
+                </div>
 
               </div>
 
-              <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+            </div>
 
-                <h3 className="text-2xl font-bold">
-                  Manekin
-                </h3>
+            {/* GDAŃSK */}
+            <div className="mt-16">
 
-                <p className="mt-4 text-neutral-300">
-                  Famous pancakes in the center of Gdańsk.
-                </p>
+              <h3 className="text-3xl font-bold">
+                🏛️ Recommended places in Gdańsk
+              </h3>
 
-              </div>
+              <p className="mt-3 max-w-3xl text-neutral-300">
+                Popular restaurants and places worth visiting
+                during your stay in the center of Gdańsk
+                and around the Old Town.
+              </p>
 
-              <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+              <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
 
-                <h3 className="text-2xl font-bold">
-                  Winne Grono
-                </h3>
+                <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
 
-                <p className="mt-4 text-neutral-300">
-                  Atmospheric place for an evening out.
-                </p>
+                  <h4 className="text-2xl font-bold">
+                    Pierogarnia Mandu
+                  </h4>
+
+                  <p className="mt-4 text-neutral-300">
+                    One of the most famous dumpling places
+                    in Gdańsk.
+                  </p>
+
+                  <p className="mt-4 text-sm text-neutral-400">
+                    City Center / Oliwa
+                  </p>
+
+                </div>
+
+                <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+
+                  <h4 className="text-2xl font-bold">
+                    Manekin Oliwa
+                  </h4>
+
+                  <p className="mt-4 text-neutral-300">
+                    Famous pancakes and one of the most popular
+                    places among locals and tourists.
+                  </p>
+
+                  <p className="mt-4 text-sm text-neutral-400">
+                    Oliwa
+                  </p>
+
+                </div>
+
+                <div className="rounded-3xl bg-black/30 p-6 transition duration-300 hover:scale-[1.03] hover:bg-black/40">
+
+                  <h4 className="text-2xl font-bold">
+                    Chleb i Wino
+                  </h4>
+
+                  <p className="mt-4 text-neutral-300">
+                    One of the most popular restaurants
+                    in Gdańsk, modern cuisine
+                    in atmospheric interiors.
+                  </p>
+
+                  <p className="mt-4 text-sm text-neutral-400">
+                    Old Town / Granary Island
+                  </p>
+
+                </div>
 
               </div>
 

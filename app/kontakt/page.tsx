@@ -13,6 +13,38 @@ export default function KontaktPage() {
       {/* CONTENT */}
       <section className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-10">
 
+      {/* CONTACT */}
+<div className="rounded-[32px] bg-white/10 p-8 backdrop-blur-xl">
+
+  <div className="flex items-center gap-4">
+
+    <div className="text-5xl">
+      ✉️
+    </div>
+
+    <div>
+
+      <h2 className="text-4xl font-black">
+        Kontakt
+      </h2>
+
+      <p className="mt-2 text-neutral-300">
+        Kontakt poprzez Airbnb
+      </p>
+
+    </div>
+
+  </div>
+
+  <p className="mt-8 text-lg leading-relaxed text-neutral-300">
+    Starajmy się kontaktować wyłącznie poprzez wiadomości Airbnb.
+    Dzięki temu wszystkie informacje dotyczące pobytu
+    oraz rezerwacji pozostaną w jednym miejscu 🙂
+  </p>
+
+</div>
+
+
         {/* CONTACT */}
         <div className="rounded-[32px] bg-white/10 p-8 backdrop-blur-xl">
 
@@ -82,41 +114,7 @@ export default function KontaktPage() {
 
         </div>
 
-        {/* EMAIL */}
-        <div className="rounded-[32px] bg-white/10 p-8 backdrop-blur-xl">
-
-          <div className="flex items-center gap-4">
-
-            <div className="text-5xl">
-              ✉️
-            </div>
-
-            <div>
-
-              <h2 className="text-4xl font-black">
-                Email
-              </h2>
-
-              <p className="mt-2 text-neutral-300">
-                Kontakt mailowy
-              </p>
-
-            </div>
-
-          </div>
-
-          <p className="mt-8 text-2xl font-bold">
-            kontakt@apartament.pl
-          </p>
-
-          <a
-            href="mailto:kontakt@apartament.pl"
-            className="mt-8 inline-block rounded-full bg-white/10 px-6 py-4 text-sm font-medium text-white transition hover:bg-white/20"
-          >
-            Wyślij email
-          </a>
-
-        </div>
+        
 
       </section>
 

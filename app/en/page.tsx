@@ -11,7 +11,7 @@ export default function HomePageEN() {
 
       {/* BACKGROUND IMAGE */}
       <img
-        src="https://images.pexels.com/photos/36635158/pexels-photo-36635158.jpeg"
+        src="/main.jpg"
         alt="Apartment"
         className="absolute inset-0 h-full w-full object-cover"
       />

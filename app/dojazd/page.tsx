@@ -194,16 +194,48 @@ export default function DojazdPage() {
 
           </div>
 
+          {/* IMAGE */}
+          <img
+            src="https://www.transport-publiczny.pl/img/20230817112731FalomatyiczytnikiFALAnakoleiInnoBaltica.jpg"
+            alt="System FALA"
+            className="mt-8 w-full rounded-3xl object-contain bg-black/20 p-2"
+          />
+
           <div className="mt-8 rounded-3xl bg-black/30 p-6">
 
             <p className="text-lg leading-relaxed text-neutral-300">
-              W autobusach i tramwajach możesz
-              płacić kartą bezpośrednio w pojeździe.
+              W autobusach, tramwajach oraz SKM możesz
+              płacić kartą bezpośrednio w pojeździe
+              dzięki systemowi FALA.
             </p>
 
             <p className="mt-4 text-lg leading-relaxed text-neutral-300">
-              System FALA automatycznie nalicza przejazdy.
+              System automatycznie nalicza najkorzystniejszą
+              opłatę za przejazdy komunikacją miejską.
             </p>
+
+          </div>
+
+          {/* ZTM */}
+          <div className="mt-6 rounded-3xl bg-black/30 p-6">
+
+            <h3 className="text-2xl font-bold">
+              Aktualne rozkłady jazdy
+            </h3>
+
+            <p className="mt-4 text-neutral-300">
+              Aktualne rozkłady tramwajów, autobusów
+              oraz komunikacji miejskiej znajdziesz
+              na oficjalnej stronie ZTM Gdańsk.
+            </p>
+
+            <a
+              href="https://ztm.gda.pl"
+              target="_blank"
+              className="mt-8 inline-block rounded-full bg-white/10 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/20"
+            >
+              Otwórz ZTM Gdańsk
+            </a>
 
           </div>
 
@@ -253,7 +285,7 @@ export default function DojazdPage() {
               >
 
                 <img
-                  src="/uber-logo.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJIOGtHi6yLhWs9gI0Bz1T83KoUzuqCQ7IQ&s"
                   alt="Uber"
                   className="h-16 w-16 rounded-2xl object-cover"
                 />

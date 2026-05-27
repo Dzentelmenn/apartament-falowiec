@@ -6,11 +6,11 @@ export default function TransportPage() {
 
       {/* HERO */}
       <PageHero
-  title="Transport"
-  subtitle="Information about public transport and getting around the Tricity area."
-  backText="← Back"
-  backHref="/en"
-/>
+        title="Transport"
+        subtitle="Information about public transport and getting around the Tricity area."
+        backText="← Back"
+        backHref="/en"
+      />
 
       {/* CONTENT */}
       <section className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-10">
@@ -43,7 +43,7 @@ export default function TransportPage() {
             <div className="rounded-3xl bg-black/30 p-6">
 
               <h3 className="text-2xl font-bold">
-                Stop
+                Tram/Bus Stop
               </h3>
 
               <p className="mt-4 text-lg text-neutral-300">
@@ -196,16 +196,47 @@ export default function TransportPage() {
 
           </div>
 
+          {/* IMAGE */}
+          <img
+            src="https://www.transport-publiczny.pl/img/20230817112731FalomatyiczytnikiFALAnakoleiInnoBaltica.jpg"
+            alt="FALA System"
+            className="mt-8 w-full rounded-3xl object-contain bg-black/20 p-2"
+          />
+
           <div className="mt-8 rounded-3xl bg-black/30 p-6">
 
             <p className="text-lg leading-relaxed text-neutral-300">
-              In buses and trams you can
-              pay directly with your card.
+              In buses, trams and SKM trains
+              you can pay directly with your card
+              thanks to the FALA system.
             </p>
 
             <p className="mt-4 text-lg leading-relaxed text-neutral-300">
-              The FALA system automatically calculates fares.
+              The system automatically calculates
+              the best fare for your public transport rides.
             </p>
+
+          </div>
+
+          {/* ZTM */}
+          <div className="mt-6 rounded-3xl bg-black/30 p-6">
+
+            <h3 className="text-2xl font-bold">
+              Current timetables
+            </h3>
+
+            <p className="mt-4 text-neutral-300">
+              Current tram, bus and public transport schedules
+              are available on the official ZTM Gdańsk website.
+            </p>
+
+            <a
+              href="https://ztm.gda.pl"
+              target="_blank"
+              className="mt-8 inline-block rounded-full bg-white/10 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/20"
+            >
+              Open ZTM Gdańsk
+            </a>
 
           </div>
 
@@ -255,7 +286,7 @@ export default function TransportPage() {
               >
 
                 <img
-                  src="/uber-logo.png"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJIOGtHi6yLhWs9gI0Bz1T83KoUzuqCQ7IQ&s"
                   alt="Uber"
                   className="h-16 w-16 rounded-2xl object-cover"
                 />

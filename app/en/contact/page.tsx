@@ -15,7 +15,38 @@ export default function ContactPage() {
       {/* CONTENT */}
       <section className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-10">
 
-        {/* CONTACT */}
+        {/* AIRBNB CONTACT */}
+        <div className="rounded-[32px] bg-white/10 p-8 backdrop-blur-xl">
+
+          <div className="flex items-center gap-4">
+
+            <div className="text-5xl">
+              ✉️
+            </div>
+
+            <div>
+
+              <h2 className="text-4xl font-black">
+                Contact
+              </h2>
+
+              <p className="mt-2 text-neutral-300">
+                Contact via Airbnb
+              </p>
+
+            </div>
+
+          </div>
+
+          <p className="mt-8 text-lg leading-relaxed text-neutral-300">
+            Please try to contact us only through Airbnb messages.
+            This way all information regarding your stay
+            and reservation will remain in one place 🙂
+          </p>
+
+        </div>
+
+        {/* PHONE CONTACT */}
         <div className="rounded-[32px] bg-white/10 p-8 backdrop-blur-xl">
 
           <div className="flex items-center gap-4">
@@ -27,7 +58,7 @@ export default function ContactPage() {
             <div>
 
               <h2 className="text-4xl font-black">
-                Contact
+                Phone Contact
               </h2>
 
               <p className="mt-2 text-neutral-300">
@@ -80,44 +111,8 @@ export default function ContactPage() {
 
           <p className="mt-5 text-neutral-300">
             If you have any questions or issues,
-            please contact us by phone or dm in SMS.
+            please contact us by phone or SMS.
           </p>
-
-        </div>
-
-        {/* EMAIL */}
-        <div className="rounded-[32px] bg-white/10 p-8 backdrop-blur-xl">
-
-          <div className="flex items-center gap-4">
-
-            <div className="text-5xl">
-              ✉️
-            </div>
-
-            <div>
-
-              <h2 className="text-4xl font-black">
-                Email
-              </h2>
-
-              <p className="mt-2 text-neutral-300">
-                Email contact
-              </p>
-
-            </div>
-
-          </div>
-
-          <p className="mt-8 text-2xl font-bold">
-            kontakt@apartament.pl
-          </p>
-
-          <a
-            href="mailto:kontakt@apartament.pl"
-            className="mt-8 inline-block rounded-full bg-white/10 px-6 py-4 text-sm font-medium text-white transition hover:bg-white/20"
-          >
-            Send Email
-          </a>
 
         </div>
 
