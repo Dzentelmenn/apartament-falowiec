@@ -28,7 +28,7 @@ export default function HomePageEN() {
         <div className="rounded-3xl bg-black/30 px-8 py-6 backdrop-blur-md">
 
           <h1 className="max-w-4xl text-3xl font-bold tracking-tight md:text-5xl">
-            Apartment in the iconic Falowiec building
+            Apartment in the iconic Falowiec
           </h1>
 
           <p className="mt-4 text-base text-neutral-200 md:text-lg">
