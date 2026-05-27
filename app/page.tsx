@@ -12,7 +12,7 @@ export default function HomePage() {
 
       {/* BACKGROUND IMAGE */}
       <img
-        src="/main.jpg"
+        src="/main.JPG"
         alt="Apartment"
         className="absolute inset-0 h-full w-full object-cover"
       />
