@@ -74,6 +74,78 @@ export default function AttractionsPage() {
 
         </FadeInSection>
 
+                {/* ZOO */}
+        <FadeInSection>
+
+          <div className="overflow-hidden rounded-[32px] bg-white/10 backdrop-blur-xl">
+
+            <img
+              src="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg"
+              alt="Gdańsk Zoo"
+              className="h-72 w-full object-cover transition duration-700 hover:scale-105"
+            />
+
+            <div className="p-8">
+
+              <h2 className="text-4xl font-black">
+                🦒 Gdańsk Zoo
+              </h2>
+
+              <p className="mt-5 text-lg leading-relaxed text-neutral-300">
+                One of the largest zoos in Poland,
+                located in the green Oliwa district.
+                A perfect place for family walks
+                and relaxing in nature.
+              </p>
+
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">
+                The zoo is home to giraffes,
+                lions, elephants, penguins
+                and many other animals.
+              </p>
+
+            </div>
+
+          </div>
+
+        </FadeInSection>
+
+        {/* OLIWA PARK */}
+        <FadeInSection>
+
+          <div className="overflow-hidden rounded-[32px] bg-white/10 backdrop-blur-xl">
+
+            <img
+              src="https://images.pexels.com/photos/37534720/pexels-photo-37534720.jpeg"
+              alt="Oliwa Park"
+              className="h-72 w-full object-cover transition duration-700 hover:scale-105"
+            />
+
+            <div className="p-8">
+
+              <h2 className="text-4xl font-black">
+                🌿 Oliwa Park
+              </h2>
+
+              <p className="mt-5 text-lg leading-relaxed text-neutral-300">
+                One of the most beautiful parks
+                in the entire Tricity area.
+                Perfect for peaceful walks,
+                coffee and relaxing away from the city.
+              </p>
+
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">
+                Nearby you can also visit
+                the Oliwa Cathedral
+                and famous organ concerts.
+              </p>
+
+            </div>
+
+          </div>
+
+        </FadeInSection>
+
         {/* SOPOT */}
         <FadeInSection>
 

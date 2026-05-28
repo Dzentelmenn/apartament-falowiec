@@ -72,6 +72,78 @@ export default function AtrakcjePage() {
 
         </FadeInSection>
 
+        {/* ZOO */}
+        <FadeInSection>
+
+          <div className="overflow-hidden rounded-[32px] bg-white/10 backdrop-blur-xl">
+
+            <img
+              src="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg"
+              alt="Zoo Gdańsk"
+              className="h-72 w-full object-cover transition duration-700 hover:scale-105"
+            />
+
+            <div className="p-8">
+
+              <h2 className="text-4xl font-black">
+                🦒 Gdańskie Zoo
+              </h2>
+
+              <p className="mt-5 text-lg leading-relaxed text-neutral-300">
+                Jedno z największych zoo w Polsce,
+                położone w zielonej części Oliwy.
+                Idealne miejsce na rodzinny spacer
+                oraz odpoczynek wśród natury.
+              </p>
+
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">
+                Na terenie zoo znajdują się m.in.
+                żyrafy, lwy, słonie, pingwiny
+                oraz wiele innych zwierząt.
+              </p>
+
+            </div>
+
+          </div>
+
+        </FadeInSection>
+
+        {/* PARK OLIWSKI */}
+        <FadeInSection>
+
+          <div className="overflow-hidden rounded-[32px] bg-white/10 backdrop-blur-xl">
+
+            <img
+              src="https://images.pexels.com/photos/37534720/pexels-photo-37534720.jpeg"
+              alt="Park Oliwski"
+              className="h-72 w-full object-cover transition duration-700 hover:scale-105"
+            />
+
+            <div className="p-8">
+
+              <h2 className="text-4xl font-black">
+                🌿 Park Oliwski
+              </h2>
+
+              <p className="mt-5 text-lg leading-relaxed text-neutral-300">
+                Jeden z najpiękniejszych parków
+                w całym Trójmieście.
+                Idealny na spokojne spacery,
+                kawę oraz odpoczynek od miasta.
+              </p>
+
+              <p className="mt-4 text-lg leading-relaxed text-neutral-300">
+                W pobliżu znajduje się również
+                Archikatedra Oliwska
+                oraz słynne koncerty organowe.
+              </p>
+
+            </div>
+
+          </div>
+
+        </FadeInSection>
+
         {/* SOPOT */}
         <FadeInSection>
 
@@ -341,9 +413,9 @@ export default function AtrakcjePage() {
                     wśród mieszkańców i turystów.
                   </p>
 
-<p className="mt-4 text-sm text-neutral-400">
-  Oliwa
-</p>
+                  <p className="mt-4 text-sm text-neutral-400">
+                    Oliwa
+                  </p>
 
                 </div>
 
@@ -355,7 +427,8 @@ export default function AtrakcjePage() {
 
                   <p className="mt-4 text-neutral-300">
                     Jedna z najbardziej popularnych restauracji
-                    w Gdańsku, Nowoczesna kuchnia w klimatycznych wnętrzach.
+                    w Gdańsku. Nowoczesna kuchnia
+                    w klimatycznych wnętrzach.
                   </p>
 
                   <p className="mt-4 text-sm text-neutral-400">
