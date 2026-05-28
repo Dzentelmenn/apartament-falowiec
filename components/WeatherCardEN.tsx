@@ -1,4 +1,57 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+interface WeatherData {
+  temp: number;
+  humidity: number;
+  wind: number;
+  description: string;
+  icon: string;
+}
+
 export default function WeatherCardEN() {
+
+  const [weather, setWeather] = useState<WeatherData | null>(null);
+
+  useEffect(() => {
+
+    async function fetchWeather() {
+
+      try {
+
+        const response = await fetch(
+          `https://api.openweathermap.org/data/2.5/weather?q=Gdansk&units=metric&lang=en&appid=${process.env.NEXT_PUBLIC_WEATHER_API}`
+        );
+
+        const data = await response.json();
+
+        setWeather({
+          temp: Math.round(data.main.temp),
+          humidity: data.main.humidity,
+          wind: Math.round(data.wind.speed),
+          description: data.weather[0].description,
+          icon: data.weather[0].icon,
+        });
+
+      } catch (error) {
+        console.error(error);
+      }
+
+    }
+
+    fetchWeather();
+
+    const interval = setInterval(fetchWeather, 600000);
+
+    return () => clearInterval(interval);
+
+  }, []);
+
+  if (!weather) {
+    return null;
+  }
+
   return (
 
     <section className="relative z-10 mx-auto max-w-5xl px-5 pb-32">
@@ -15,11 +68,11 @@ export default function WeatherCardEN() {
             </p>
 
             <h2 className="mt-3 text-5xl font-black">
-              22°C
+              {weather.temp}°C
             </h2>
 
-            <p className="mt-3 text-lg text-neutral-300">
-              Sunny & warm
+            <p className="mt-3 text-lg capitalize text-neutral-300">
+              {weather.description}
             </p>
 
           </div>
@@ -34,7 +87,7 @@ export default function WeatherCardEN() {
               </p>
 
               <p className="mt-2 text-2xl font-bold">
-                12 km/h
+                {weather.wind} km/h
               </p>
 
             </div>
@@ -46,7 +99,7 @@ export default function WeatherCardEN() {
               </p>
 
               <p className="mt-2 text-2xl font-bold">
-                61%
+                {weather.humidity}%
               </p>
 
             </div>
@@ -54,8 +107,14 @@ export default function WeatherCardEN() {
           </div>
 
           {/* RIGHT */}
-          <div className="text-7xl">
-            ☀️
+          <div>
+
+            <img
+              src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}
+              alt={weather.description}
+              className="h-24 w-24"
+            />
+
           </div>
 
         </div>
@@ -65,4 +124,5 @@ export default function WeatherCardEN() {
     </section>
 
   );
+
 }
