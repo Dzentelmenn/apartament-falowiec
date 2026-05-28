@@ -26,6 +26,10 @@ export default function WeatherCard() {
 
         const data = await response.json();
 
+        if (!data.main || !data.weather) {
+          return;
+        }
+
         setWeather({
           temp: Math.round(data.main.temp),
           humidity: data.main.humidity,
