@@ -21,10 +21,12 @@ export default function WeatherCardEN() {
       try {
 
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=Gdansk&units=metric&lang=en&appid=${process.env.NEXT_PUBLIC_WEATHER_API}`
+          `https://api.openweathermap.org/data/2.5/weather?q=Gdansk&units=metric&lang=en&appid=fb023cb0769da9f7761ae1d46f8cdff2`
         );
 
         const data = await response.json();
+
+        console.log(data);
 
         if (!data.main || !data.weather) {
           return;
@@ -53,7 +55,21 @@ export default function WeatherCardEN() {
   }, []);
 
   if (!weather) {
-    return null;
+
+    return (
+
+      <section className="relative z-10 mx-auto max-w-5xl px-5 pb-32">
+
+        <div className="mt-[-120px] rounded-[32px] border border-white/10 bg-white/10 p-8 text-white backdrop-blur-xl">
+
+          Loading weather...
+
+        </div>
+
+      </section>
+
+    );
+
   }
 
   return (
@@ -71,7 +87,7 @@ export default function WeatherCardEN() {
               Gdańsk Weather
             </p>
 
-            <h2 className="mt-3 text-5xl font-black">
+            <h2 className="mt-3 text-5xl font-black text-white">
               {weather.temp}°C
             </h2>
 
@@ -84,7 +100,7 @@ export default function WeatherCardEN() {
           {/* CENTER */}
           <div className="flex gap-6">
 
-            <div className="rounded-3xl bg-black/30 px-6 py-5">
+            <div className="rounded-3xl bg-black/30 px-6 py-5 text-white">
 
               <p className="text-sm text-neutral-400">
                 Wind
@@ -96,7 +112,7 @@ export default function WeatherCardEN() {
 
             </div>
 
-            <div className="rounded-3xl bg-black/30 px-6 py-5">
+            <div className="rounded-3xl bg-black/30 px-6 py-5 text-white">
 
               <p className="text-sm text-neutral-400">
                 Humidity
