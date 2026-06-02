@@ -107,59 +107,6 @@ export default function InformacjePage() {
 
         </div>
 
-        {/* ACCESS CODES */}
-        <div className="rounded-[32px] bg-white/10 p-8 backdrop-blur-xl">
-
-          <div className="flex items-center gap-4">
-
-            <div className="text-4xl">
-              🔐
-            </div>
-
-            <div>
-
-              <h2 className="text-3xl font-black">
-                Kody dostępu
-              </h2>
-
-              <p className="mt-1 text-neutral-300">
-                Wejście do budynku i galerii
-              </p>
-
-            </div>
-
-          </div>
-
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-
-            <div className="rounded-2xl bg-black/30 p-6">
-
-              <p className="text-sm uppercase tracking-widest text-neutral-400">
-                Klatka schodowa
-              </p>
-
-              <p className="mt-4 text-3xl font-black">
-                33 → kluczyk → 6019
-              </p>
-
-            </div>
-
-            <div className="rounded-2xl bg-black/30 p-6">
-
-              <p className="text-sm uppercase tracking-widest text-neutral-400">
-                Galeria - 2 piętro
-              </p>
-
-              <p className="mt-4 text-3xl font-black">
-                33 → kluczyk → 0390
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
         {/* CHECK-IN */}
         <div className="rounded-[32px] bg-white/10 p-8 backdrop-blur-xl">
 
